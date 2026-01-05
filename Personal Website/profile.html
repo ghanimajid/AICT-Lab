@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crochet Portfolio</title>
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Cozy Canvas</h1>
+        <p>Handmade crafts, creativity and passion stitched together</p>
+    </div>
+
+    <div class="navbar">
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('about')">About Me</a>
+        <a onclick="showPage('projects')">Projects</a>
+        <a onclick="showPage('interests')">Interests</a>
+        <a onclick="showPage('challenges')">Challenges</a>
+        <a onclick="showPage('goals')">Goals</a>
+        <a onclick="showPage('contact')">Contact</a>
+    </div>
+
+    <div class="container" id="home">
+        <h2>Hooked on Creativity</h2>
+        <div class="box">
+            <p>Welcome to my cozy corner of the internet, dedicated to the timeless magic of the hook and yarn.</p>
+            <p>Step inside my digital portfolio to explore a gallery of finished projects, intricate pattern
+                designs, and custom fiber art commissions. Whether you're seeking inspiration, a unique handmade gift,
+                or your next creative challenge, you're in the right place.</p>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <h2>The Artisan behind the Hook</h2>
+        <div class="box">
+            <p>Hello! I'm <strong>Ghania Majid</strong>, and my relationship with the hook began as a calming hobby
+                that grew into a vital form of self-expression and mindful creation.</p>
+            <p>I specialize in modern minimalist garments and detailed amigurumi. My work is defined by a commitment
+                to quality fiber, texture, and a modern twist on traditional techniques.</p>
+            <p>I believe that handmade items carry an energy—a story woven into every stitch. I take pride in creating
+                pieces that are not just used, but cherished.</p>
+            <p>My goal is to keep creating unique and adorable crochet pieces that spread happiness!</p>
+        </div>
+    </div>
+
+    <div class="container" id="projects">
+        <h2>My Projects</h2>
+        <p>Here are some of my crochet pieces.</p>
+
+        <div class="gallery">
+            <img src="flower1.jpg" class="project" />
+            <img src="bag1.jpg" class="project" />
+            <img src="plushie2.jpg" class="project" />
+            <img src="bag2.jpg" class="project" />
+            <img src="plushie1.jpg" class="project" />
+            <img src="trinket.jpg" class="project" />
+            <img src="keychain.jpg" class="project" />
+            <img src="spidey.jpg" class="project" />
+            <img src="clips.jpg" class="project" />
+            <img src="flower2.jpg" class="project" />
+        </div>
+
+        <p>Listen to my favorite crochet playlist:</p>
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg" />
+        </audio>
+        <h3>What I Create:</h3>
+        <ul>
+            <li>Handmade plushies</li>
+            <li>Custom tote bags</li>
+            <li>Warm scarves and blankets</li>
+            <li>Decorative keychains</li>
+        </ul>
+        <p>My favorite crochet book is <cite>Edward's Menagerie</cite>.</p>
+    </div>
+
+    <div class="container" id="interests">
+        <h2>My Interests</h2>
+        <div class="box">
+            <p>These are the things that fuel my designs and inform the look and feel of my crochet work.</p>
+            <ul>
+                <li><strong>Yarn Science & Sourcing:</strong> I love learning about ply, twist, and drape, and seeking
+                    out ethically produced, small-batch dyed yarns.</li>
+                <li><strong>Texture Mapping:</strong> I experiment with Tunisian stitches, cables, and post-stitch
+                    variations to create deep, tactile surfaces.</li>
+                <li><strong>Art History & Colorwork:</strong> Studying historical textiles inspires my palettes and use
+                    of tapestry crochet.</li>
+                <li><strong>Swatch Meditation:</strong> My favorite way to unwind is crocheting test swatches.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" id="challenges">
+        <h2>Challenges</h2>
+        <div class="box">
+            <p>I'm still learning and improving every day. Here are some hurdles all serious crocheters face:</p>
+            <ul>
+                <li><strong>The Frogging Fear:</strong> I often unravel sections that aren't perfect.</li>
+                <li><strong>Pattern-Writing Precision:</strong> Writing clear and size-inclusive patterns is hard.</li>
+                <li><strong>The Single-Crochet Slump:</strong> Repetitive stitch rows test my focus.</li>
+                <li><strong>Stash Control:</strong> Managing yarn stash is a constant struggle!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" id="goals">
+        <h2>Weaving the Future: Goals</h2>
+        <div class="box">
+            <p>My aspirations for my craft, design, and teaching:</p>
+            <ul>
+                <li><strong>Launch a Video Tutorial Series</strong> covering advanced techniques.</li>
+                <li><strong>Master Crochet Garment Grading</strong> for inclusive sizing.</li>
+                <li><strong>Participate in a Fiber Market</strong> to meet customers in person.</li>
+                <li><strong>Inspire Future Designers</strong> by mentoring beginners.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Me</h2>
+        <div class="form">
+            <form>
+                <label>Name</label><br />
+                <input type="text" name="name" /><br /><br />
+
+                <label>Email</label><br />
+                <input type="text" name="email" /><br /><br />
+
+                <label>City</label><br />
+                <input type="text" name="city" /><br /><br />
+
+                <label>Comments</label><br />
+                <textarea name="comments" rows="10"></textarea><br /><br />
+
+                <div style="text-align:center;">
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Crochet Portfolio</p>
+    </footer>
+
+    <script>
+        function showPage(id) {
+            document.querySelectorAll('.container').forEach(c => c.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+        window.onload = () => showPage('home');
+    </script>
+</body>
+
+</html>
